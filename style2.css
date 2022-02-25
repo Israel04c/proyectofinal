@@ -1,0 +1,15 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*Valores generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Home header*/
+.hcabecera{
+    background-color: #5E7AA5;
+}

@@ -1,0 +1,105 @@
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*Valores generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5E7AA5;
+    font-family: 'Lato', sans-serif;
+}
+/*Header landing page*/
+.cabecera{
+    background-color: #5E7AA5;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera .texto h4{
+    margin-top: 15px;
+}
+/*Who*/
+.who .logo img{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+/*Comics Hulk*/
+.comics a{
+    text-decoration: none;
+    color: #000;
+}
+.comics a:active{
+    cursor: wait;
+}
+/*Phone redes*/
+.phone .instagram::after{
+    content: 'Acceder a perfil de Instagram';
+}
+.phone .youtube::after{
+    content: 'Acceder a canal de Youtube';
+}
+.phone .facebook::after{
+    content: 'Acceder a perfil de Facebook';
+}
+.phone .twitter::after{
+    content: 'Acceder a perfil de Twitter';
+}
+.phone div a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+@media screen and (max-width: 720px){
+    .btnI .btn{
+        font-size: 0.6rem;
+        max-width: 90px;
+        max-height: 30px;
+    }
+    .phone .instagram::after{
+        content: 'Acceder a Instagram';
+    }
+    .phone .youtube::after{
+        content: 'Acceder a Youtube';
+    }
+    .phone .facebook::after{
+        content: 'Acceder a Facebook';
+    }
+    .phone .twitter::after{
+        content: 'Acceder a Twitter';
+    }
+}
+
+@media screen and (max-width: 480px){
+    div .c1, .c2{
+        text-align: center;
+    }
+    .phone{
+        text-align: center;
+    }
+    .cabecera .btn{
+        flex-direction: row;
+    }
+    .phone .instagram::after{
+        content: 'Instagram';
+    }
+    .phone .youtube::after{
+        content: 'Youtube';
+    }
+    .phone .facebook::after{
+        content: 'Facebook';
+    }
+    .phone .twitter::after{
+        content: 'Twitter';
+    }
+}
