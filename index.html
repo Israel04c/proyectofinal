@@ -168,12 +168,12 @@
       </div>
   
       <div class="modal-body">
-        <form>
+        <form method="post">
           <div class="mb-3 mt-3">
-            <label for="exampleInputText1" class="form-label">Apodo del lector</label>
+            <label for="exampleInputText1" id="usuario" class="form-label usuario">Apodo del lector</label>
             <input type="text" class="form-control" id="exampleInputText1"> 
           <div class="mb-3 mt-2">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <label for="exampleInputPassword1" id="clave" class="form-label clave">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="mb-3 form-check mt-2">
@@ -189,7 +189,7 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Iniciar</button>
+        <input type="submit" value="Iniciar" class="btn btn-primary" onclick="Validacion()"></input>
       </form>
       </div>
     </div>
@@ -215,5 +215,17 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script>
+  function Validacion(){
+    var usuario = document.getElementById('usuario').value;
+    var clave = document.getElementById('clave').value;
+    alert(usuario);
+    if (usuario == "Isidro" && clave =='1234'){
+        window.location.href = "home.html"
+    }else{
+      alert("Los datos son incorrectos");
+    }
+  }
+</script>
 </body>
 </html>
