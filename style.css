@@ -40,8 +40,9 @@ body{
 }
 .comics a:active{
     cursor: wait; 
+}
 /*Phone redes*/
-.phone .instagram::after{
+.phone .instagram::after{ 
     content: 'Acceder a perfil de Instagram';
 }
 .phone .youtube::after{
@@ -75,45 +76,44 @@ textarea:invalid {
     border: 2px solid red;
 }
 @media screen and (max-width: 720px){
-    .btnI .btn{
-        font-size: 0.6rem;
-        max-width: 90px;
-        max-height: 30px;
-    }
-    .phone .instagram::after{
-        content: 'Acceder a Instagram';
-    }
-    .phone .youtube::after{
-        content: 'Acceder a Youtube';
-    }
-    .phone .facebook::after{
-        content: 'Acceder a Facebook';
-    }
-    .phone .twitter::after{
-        content: 'Acceder a Twitter';
-    }
+.btnI .btn{
+    font-size: 0.6rem;
+    max-width: 90px;
+    max-height: 30px;
 }
-
+.phone .instagram::after{
+    content: 'Acceder a Instagram';
+}
+.phone .youtube::after{
+    content: 'Acceder a Youtube';
+}
+.phone .facebook::after{
+    content: 'Acceder a Facebook';
+}
+.phone .twitter::after{
+    content: 'Acceder a Twitter';
+}
+}
 @media screen and (max-width: 480px){
-    div .c1, .c2{
-        text-align: center;
-    }
-    .phone{
-        text-align: center;
-    }
-    .cabecera .btn{
-        flex-direction: row;
-    }
-    .phone .instagram::after{
-        content: 'Instagram';
-    }
-    .phone .youtube::after{
-        content: 'Youtube';
-    }
-    .phone .facebook::after{
-        content: 'Facebook';
-    }
-    .phone .twitter::after{
-        content: 'Twitter';
-    }
+div .c1, .c2{
+    text-align: center;
+}
+.phone{
+    text-align: center;
+}
+.cabecera .btn{
+    flex-direction: row;
+}
+.phone .instagram::after{
+    content: 'Instagram';
+}
+.phone .youtube::after{
+    content: 'Youtube';
+}
+.phone .facebook::after{
+    content: 'Facebook';
+}
+.phone .twitter::after{
+    content: 'Twitter';
+}
 }

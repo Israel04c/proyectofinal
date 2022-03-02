@@ -8,7 +8,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-    background-image: url(img/fondob.jpg);
+    background-image: url(img/fondob.jpg) ;
 }
 /*Home header*/
 .hcabecera{
@@ -26,5 +26,25 @@ body{
     background-color: whitesmoke;
 }
 @media screen and (max-width: 480px){
-    
+    .oculto{
+        text-align: center;
+    }
+    .editado{
+        display: none;
+    }
+    .editado2{
+        display: none;
+    }
+    .perfil33{
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .editado{
+        max-width: 80px;
+    }
+    .hcabecera{
+        display: flex;
+        justify-content: center;
+    }
 }
