@@ -82,7 +82,6 @@
     </div>
 
     <div class="row comics m-1 mt-md-4 mt-sm-3">
-
       <div class="col-md-3 col-sm-6">
         <a href="#"><div class="card">
         <img src="img/comicL1.jpg" class="card-img-top">
@@ -171,7 +170,7 @@
         <form method="post">
           <div class="mb-3 mt-3">
             <label for="exampleInputText1" class="form-label">Apodo del lector</label>
-            <input type="text" class="usuario form-control" id="usuario" placeholder="Isidro" pattern="[A-Za-z]{5-6}" required>
+            <input type="text" class="usuario form-control" id="usuario" placeholder="Isidro o Admin" pattern="[A-Za-z]{5-6}" required>
           </div>        
           <div class="mb-3 mt-2">
             <label for="exampleInputPassword1" class="form-label clave">Contraseña</label>
@@ -228,11 +227,15 @@
             <input type="text" class="form-control" id="inputName">
           </div>
           <div class="mb-3 mt-3">
-            <label for="inputState" class="form-label">State</label>
+            <label for="inputState" class="form-label">En caso de que olvides tu contraseña</label>
             <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
+              <option>¿Cúal es el nombre de tu mascota?</option>
+              <option>¿En qué ciudad naciste?</option>
+              <option>¿Cúal era tu apodo de pequeño/a?</option>
             </select>
+          </div>
+          <div class="mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Tu respuesta">
           </div>
           <div class="mb-3 form-check mt-2">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -250,33 +253,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 <script>
-
   function Validar() {
 
-      //Coger los datos del formulario 
-      var usuario = document.getElementById("usuario").value;
-      var clave = document.getElementById("clave").value;
+//Coger los datos del formulario 
+var usuario = document.getElementById("usuario").value;
+var clave = document.getElementById("clave").value;
 
-      if (usuario == "Admin" && clave == "1234") {
+if (usuario == "Admin" && clave == "1234") {
 
-          //Si somos administrador nos vamos a una web administrador
-          window.location.pathname = '/admin.html';
+    //Si somos administrador nos vamos a una web administrador
+    window.location.pathname = '/admin.html';
 
-      } else {
-          //Si algún dato está erroneo mostramos un mensaje
-          document.getElementById("error").innerHTML="Datos del usuario erróneo";
-      }
+} else {
+    //Si algún dato está erroneo mostramos un mensaje
+    document.getElementById("error").innerHTML="Datos del usuario erróneo";
+}
 
-      if (usuario == "Isidro" && clave == "1234") {
+if (usuario == "Isidro" && clave == "1234") {
 
-          //Si somos usuario nos vamos a una web lector
-          window.location.pathname = '/home.html';
+    //Si somos usuario nos vamos a una web lector
+    window.location.pathname = '/home.html';
 
-      } else {
-          //Si algún dato está erroneo mostramos un mensaje
-          document.getElementById("error").innerHTML="Datos del usuario erroneo";
-      }
-  }
+} else {
+    //Si algún dato está erroneo mostramos un mensaje
+    document.getElementById("error").innerHTML="Datos del usuario erroneo";
+}
+}
 </script>
 </body>
 </html>

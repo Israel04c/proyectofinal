@@ -25,7 +25,14 @@ body{
 .contenido{
     background-color: whitesmoke;
 }
+/*Espaciado de contenido*/
+.altura{
+    padding-top: 8px;
+}
 @media screen and (max-width: 480px){
+    div .c1, .c2{
+        text-align: center;
+    }
     .oculto{
         text-align: center;
     }
