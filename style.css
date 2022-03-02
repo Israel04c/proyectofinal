@@ -17,7 +17,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    display: flex;
 }
 .texto{
     display: flex;
@@ -40,8 +39,7 @@ body{
     color: #000;
 }
 .comics a:active{
-    cursor: wait;
-}
+    cursor: wait; 
 /*Phone redes*/
 .phone .instagram::after{
     content: 'Acceder a perfil de Instagram';
@@ -59,6 +57,22 @@ body{
     text-decoration: none;
     padding: 5px;
     color: white;
+}
+/*Error login*/
+.error{
+    padding: 5px;
+    margin-top: 10px;
+    color: red;
+}
+
+.modal input:valid,
+textarea:valid {
+    border: 2px solid green;
+}
+
+.modal input:invalid,
+textarea:invalid {
+    border: 2px solid red;
 }
 @media screen and (max-width: 720px){
     .btnI .btn{

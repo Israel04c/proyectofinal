@@ -8,8 +8,23 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    background-image: url(img/fondob.jpg);
 }
 /*Home header*/
 .hcabecera{
     background-color: #5E7AA5;
+}
+/*fondos nav*/
+.fondo{
+    background-color: #90b0e0;
+}
+.fondo2{
+    background-color: #c8deff;
+}
+/*Fondo contenido*/
+.contenido{
+    background-color: whitesmoke;
+}
+@media screen and (max-width: 480px){
+    
 }
