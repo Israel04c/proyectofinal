@@ -45,8 +45,22 @@ body{
     max-width: 110px;
     border-radius: 5px;
 }
+/*Ajustes del tamaño dell video*/
+.altura .video iframe{
+    width: 500px;
+    height: 300px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+/*Ajuste btn ver*/
+div .boton34{
+    display: none;
+}
 @media screen and (max-width: 480px){
     div .c1, .c2{
+        text-align: center;
+    }
+    div .t1{
         text-align: center;
     }
     .oculto{
@@ -61,6 +75,13 @@ body{
     .perfil33{
         margin-left: 150px;
     }
+    .altura .video iframe{
+        display: none;
+    }
+    div .boton34{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 1024px){
     .card-body{
@@ -72,5 +93,9 @@ body{
     .hcabecera{
         display: flex;
         justify-content: center;
+    }
+    .altura .video iframe{
+        max-width: 300px;
+        max-height: 190px;
     }
 }
