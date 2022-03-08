@@ -28,6 +28,22 @@ body{
 /*Espaciado de contenido*/
 .altura{
     padding-top: 8px;
+    padding-bottom: 10px;
+}
+/*Altura de los productos*/
+.contenido .altura .card-img-top{
+    height: 450px;
+}
+.contenido .altura a{
+    text-decoration: none;
+}
+/*btn filtrado*/
+.altura .filtros .btn{
+    background-color: #5E7AA5;
+    margin-left: 15px;
+    max-height: 40px;
+    max-width: 110px;
+    border-radius: 5px;
 }
 @media screen and (max-width: 480px){
     div .c1, .c2{
@@ -47,6 +63,9 @@ body{
     }
 }
 @media screen and (max-width: 1024px){
+    .card-body{
+        text-align: center;
+    }
     .editado{
         max-width: 80px;
     }

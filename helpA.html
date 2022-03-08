@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="style2.css" type="text/CSS">
-<title>Home admin</title>
+<title>Ayuda administrador</title>
 </head>
 <body>
 <div  class="container">
@@ -30,16 +30,15 @@
                 </ul>
                 <form class="d-flex">
                   <img src="img/buscador.png" class="editado2 p-1 m-2" width="30px" height="30px" type="button">
-                  <input class="editado form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                  <input class="form-control me-2 editado" type="search" placeholder="Buscar.." aria-label="Search">
                 </form>
                 <div class="dropdown">
-                  <img class="perfil33" src="img/user.png" alt="Perfil de usuario" width="40" height="40" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="perfil33" src="img/user.png" alt="Perfil de usuario" width="40" height="40" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li><button class="dropdown-item fw-bold text-center" type="button">Administrar perfiles</button></li>
-                    <li><button class="dropdown-item mt-1 fw-light" type="button"><svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                      </svg> Admin</button></li>
+                    <li><button class="dropdown-item mt-1 fw-light" type="button"><svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg> Admin</button></li>
                     <li><button class="dropdown-item mt-1 fw-light" type="button"><svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                       <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
@@ -53,62 +52,36 @@
               </div>
         </nav>
     </div>
+
     <div class="row col-12-sm fondo">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="newsA.html">Novedades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="merchandisingA.html">Merchandising</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="helpA.html">Ayuda</a>
-          </li>
-        </ul>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="newsA.html">Novedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="merchandisingA.html">Merchandising</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="helpA.html" tabindex="-1" aria-disabled="true">Ayuda</a>
+        </li>
+      </ul>
     </div>
+
     <div class="row col-12-sm fondo2">
-        <nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-          </ol>
-        </nav>
+      <nav class="mt-2" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Ayuda</li>
+        </ol>
+      </nav>
     </div>
 </div>
 
 <div class="container contenido">
-  <div class="row altura">
-    <div class="col-12-sm col-md-6">
-      <h5 class="m-3 text-black c1">Página del administrador</h5>
-      <hr class="text-black-50">
-    </div>
-    <div class="filtros d-none col-md-6 d-sm-none d-md-block d-grid gap-2 d-md-flex justify-content-md-end pt-2">
-      <div class="btn-group">
-        <button class="btn btn-sm dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Género
-        </button>
-        <ul class="dropdown-menu ancho">
-          <li><button class="dropdown-item text-center" type="button">Ciencia Ficción</button></li>
-          <li><button class="dropdown-item text-center" type="button">Terror</button></li>
-          <li><button class="dropdown-item text-center" type="button">Fantasía</button></li>
-          <li><button class="dropdown-item text-center" type="button">Marvel</button></li>
-        </ul>
-        <button class="btn btn-sm dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Edad
-        </button>
-        <ul class="dropdown-menu ancho">
-          <li><button class="dropdown-item text-center" type="button">3+</button></li>
-          <li><button class="dropdown-item text-center" type="button">7+</button></li>
-          <li><button class="dropdown-item text-center" type="button">12+</button></li>
-          <li><button class="dropdown-item text-center" type="button">16+</button></li>
-          <li><button class="dropdown-item text-center" type="button">16+</button></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
 </div>
 
 <div class="container">
@@ -138,12 +111,13 @@
         </div>
       </section>
     </div>
+
     <section>
       <div class="row col-12-sm text-center text-md-start hcabecera text-white pt-5">
         <div class="row col-12">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-gem me-3"></i>comics cloud</h6>
-            <p class="text-white-50">Here you can use rows and columns to organize your footer content. Lorem ipsumdolor sit amet, consectetur adipisicing elit.</p>
+            <p class="text-white-50">Disfruta de Comics Clud con una increíble variedad. Encuentra tus comics favoritos y comparte las historias con tus amigos.</p>
           </div>
   
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto pb-4">
@@ -169,10 +143,11 @@
         </div>
       </div>
     </section>
+  
     <div class=" row col-12-sm text-center hcabecera text-white">
     <p>© 2021 Copyright: Israel Conde Casillas</p>
     </div>
-    </footer>
+  </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
