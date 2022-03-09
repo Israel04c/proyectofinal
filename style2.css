@@ -56,6 +56,12 @@ body{
 div .boton34{
     display: none;
 }
+/*Ajustes tablas admin*/
+.altura table{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 75%;
+}
 @media screen and (max-width: 480px){
     div .c1, .c2{
         text-align: center;
@@ -81,6 +87,9 @@ div .boton34{
     div .boton34{
         display: flex;
         justify-content: center;
+    }
+    .altura table{
+        text-align: center;
     }
 }
 @media screen and (max-width: 1024px){
