@@ -67,6 +67,9 @@
         <li class="nav-item">
           <a class="nav-link" href="help.html">Ayuda</a>
         </li>
+        <li class="nav-item">
+          <button class="btn me-md-2 text-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">Contacto</button>
+        </li>
       </ul>
     </div>
 
@@ -378,8 +381,73 @@
     <p>© 2021 Copyright: Israel Conde Casillas</p>
     </div>
   </footer>
+
+  <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post">
+            <div class="row altura col-12-sm m-auto">
+              <form method="post">
+                <div class="mb-3">
+                  <label for="exampleInputText22" class="form-label">Nombre *</label>
+                  <input type="text" id="usuario" class="form-control" size="30" maxlength="50" placeholder="Isidro" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="exampleInputEmail2" class="form-label">Dirección de correo electrónico *</label>
+                  <input type="email" class="form-control" id="inputEmail5" placeholder="isidro02@educarex.es" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="exampleInputText23" class="form-label">Asunto *</label>
+                  <input type="text" class="form-control" id="inputText35" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="exampleFormControlTextarea10" class="form-label">Mensaje</label>
+                  <textarea class="form-control" rows="4" id="inputTextarea" required></textarea>
+                </div>
+                  <p class="error" id="error"></p>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <input type="button" onclick="Validar()" value="Enviar" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script>
+  function Validar() {
+    
+//Coge los datos del formulario 
+var usuario = document.getElementById("usuario").value;
+var inputEmail5 = document.getElementById("inputEmail5").value;
+var inputText35 = document.getElementById("inputText35").value;
+
+if (inputText35 == "") {
+    alert("Debes rellenar el campo Asunto");
+    return false
+} else {
+    document.getElementById("error").innerHTML="Datos erroneos";
+}
+
+if (usuario == "Isidro" && inputEmail5 == "isidro02@educarex.es") {
+
+    //Si esta todo correcto nos lleva a la página principal
+    window.location.pathname = '/home.html';
+
+} else {
+    //Si algún dato está erroneo mostramos un mensaje
+    document.getElementById("error").innerHTML="Datos erroneos";
+}
+}
+</script>
 </body>
 </html>

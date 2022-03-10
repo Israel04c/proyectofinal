@@ -108,3 +108,24 @@ div .boton34{
         max-height: 190px;
     }
 }
+
+/*Edición defensa*/
+.fondo button:hover{
+    color: #2c5eaa !important;
+}
+/*Error modal contacto*/
+.error{
+    padding: 5px;
+    margin-top: 10px;
+    color: red;
+}
+
+.modal input:valid,
+text:valid {
+    border: 2px solid green;
+}
+
+.modal input:invalid,
+text:invalid {
+    border: 2px solid red;
+}
